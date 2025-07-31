@@ -1,5 +1,7 @@
 # FSU Backend Starter
 
+You can use this repository as a template for your backend.
+
 ## Usage
 
 1. Create a new database named `fsu`.
