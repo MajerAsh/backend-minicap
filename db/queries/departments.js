@@ -58,3 +58,4 @@ export async function updateDepartmentById(id, name, description, images) {
   } = await db.query(sql, [id, name, description, images]);
   return department;
 }
+

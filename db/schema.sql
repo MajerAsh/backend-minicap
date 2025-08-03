@@ -24,3 +24,4 @@ CREATE TABLE faculty (
   contactInfo TEXT NOT NULL,
   department_id INTEGER REFERENCES departments(id) ON DELETE CASCADE
 );
+
