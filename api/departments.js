@@ -55,7 +55,15 @@ router
 
 router.put("/:id", requireUser, async (req, res) => {
   const { id } = req.params;
-  const { name, description, images } = req.body;
+  const existing = await getDepartmentById(id);
+
+  if (!existing) return res.status(404).json({ error: "Department not found" });
+
+  const {
+    name = existing.name,
+    description = existing.description,
+    images = existing.images,
+  } = req.body;
 
   try {
     const department = await updateDepartmentById(

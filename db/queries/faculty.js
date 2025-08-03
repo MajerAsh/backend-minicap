@@ -77,26 +77,43 @@ export async function updateFacultyById(
   contactInfo,
   department_id
 ) {
+  const {
+    rows: [existing],
+  } = await db.query("SELECT * FROM faculty WHERE id = $1", [id]);
+
+  if (!existing) {
+    throw new Error("Faculty not found");
+  }
+
+  const updatedName = name ?? existing.name;
+  const updatedBio = bio ?? existing.bio;
+  const updatedProfileImage = profileImage ?? existing.profileimage;
+  const updatedContactInfo = contactInfo ?? existing.contactinfo;
+  const updatedDepartmentId = department_id ?? existing.department_id;
+
   const sql = `
-  UPDATE faculty
-  SET
-    name = $2,
-    bio = $3,
-    profileImage = $4,
-    contactInfo = $5,
-    department_id = $6
-  WHERE id = $1
-  RETURNING *
+    UPDATE faculty
+    SET name = $1,
+        bio = $2,
+        profileImage = $3,
+        contactInfo = $4,
+        department_id = $5
+    WHERE id = $6
+    RETURNING *
   `;
+
+  const values = [
+    updatedName,
+    updatedBio,
+    updatedProfileImage,
+    updatedContactInfo,
+    updatedDepartmentId,
+    id,
+  ];
+
   const {
     rows: [faculty],
-  } = await db.query(sql, [
-    id,
-    name,
-    bio,
-    profileImage,
-    contactInfo,
-    department_id,
-  ]);
+  } = await db.query(sql, values);
+
   return faculty;
 }
