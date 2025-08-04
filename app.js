@@ -2,7 +2,6 @@ import morgan from "morgan";
 import express from "express";
 const app = express();
 import cors from "cors";
-import departmentsRouter from "#api/departments";
 
 export default app;
 
@@ -33,8 +32,6 @@ app.use((err, req, res, next) => {
   res.status(500).send("Sorry! Something went wrong.");
 });
 
-app.use("/departments", departmentsRouter);
-
 app.use((err, req, res, next) => {
   // A switch statement can be used instead of if statements
   // when multiple cases are handled the same way.
@@ -56,4 +53,3 @@ app.use((err, req, res, next) => {
   console.error(err);
   res.status(500).send("Sorry! Something went wrong.");
 });
-
