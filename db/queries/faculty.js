@@ -41,7 +41,7 @@ export async function getFacultyByDepartmentId(department_id) {
   SELECT f.*, d.name AS department_name
   FROM faculty f
   LEFT JOIN departments d ON f.department_id = d.id
-  WHERE f.id = $1
+  WHERE f.department_id = $1 
   `;
   const {
     rows: [faculty],
