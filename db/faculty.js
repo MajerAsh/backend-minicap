@@ -82,82 +82,82 @@ const faculty = [
   {
     id: 11,
     name: "Mark Zuckerberg",
-    bio: 'George Orwell’s dystopian masterpiece, "1984," presents a chilling vision of a totalitarian society ruled by the Party and its omnipresent leader, Big Brother. The novel follows Winston Smith, a citizen of Airstrip One, as he navigates a world of surveillance, propaganda, and thought control. "1984" serves as a stark warning about the erosion of individuality, truth, and freedom in a surveillance state.',
+    bio: 'Mark Zuckerberg, born on May 14, 1984, is an American technology entrepreneur best known as the co-founder and CEO of Meta Platforms (formerly Facebook). He launched Facebook in 2004 while studying at Harvard, which has since grown into one of the world’s largest social media companies, also owning Instagram, WhatsApp, and Threads. Along with his wife Priscilla Chan, he runs the Chan Zuckerberg Initiative, focusing on education, science, and social causes.',
     profileImage:
-      "https://images.pexels.com/photos/7034646/pexels-photo-7034646.jpeg",
-    contactInfo: "1984",
+      "https://imageio.forbes.com/specials-images/imageserve/5c76b7d331358e35dd2773a9/0x0.jpg?format=jpg&crop=4401,4401,x0,y0,safe&height=416&width=416&fit=bounds",
+    contactInfo: "mark.zuckerberg@fsu.edu",
   },
   {
     id: 12,
     name: "Tim Berners-Lee",
-    bio: 'George Orwell’s dystopian masterpiece, "1984," presents a chilling vision of a totalitarian society ruled by the Party and its omnipresent leader, Big Brother. The novel follows Winston Smith, a citizen of Airstrip One, as he navigates a world of surveillance, propaganda, and thought control. "1984" serves as a stark warning about the erosion of individuality, truth, and freedom in a surveillance state.',
+    bio: 'Tim Berners-Lee, born on June 8, 1955, is a British computer scientist best known as the inventor of the World Wide Web. In 1989, while working at CERN, he proposed and developed the first web browser and server, which made it possible to access and share information over the internet using websites and hyperlinks. He has since become a strong advocate for keeping the web open, free, and accessible to everyone.',
     profileImage:
-      "https://images.pexels.com/photos/7034646/pexels-photo-7034646.jpeg",
-    contactInfo: "1984",
+      "https://cdn.britannica.com/22/221822-050-3B0A657F/British-scientist-Tim-Berners-Lee.jpg?w=300",
+    contactInfo: "tim.berners@fsu.edu",
   },
   {
     id: 13,
     name: "Lynn Conway",
-    bio: 'George Orwell’s dystopian masterpiece, "1984," presents a chilling vision of a totalitarian society ruled by the Party and its omnipresent leader, Big Brother. The novel follows Winston Smith, a citizen of Airstrip One, as he navigates a world of surveillance, propaganda, and thought control. "1984" serves as a stark warning about the erosion of individuality, truth, and freedom in a surveillance state.',
+    bio: 'Lynn Conway (1938–2024) was an American computer scientist and electrical engineer who revolutionized microchip design. After pioneering out-of-order execution at IBM, she co-developed the Mead–Conway VLSI design methods at Xerox PARC in the 1970s, which transformed how modern computer chips are built. She later became a professor at the University of Michigan and was also a prominent advocate for transgender rights, inspiring generations through her technical innovations and activism.',
     profileImage:
-      "https://images.pexels.com/photos/7034646/pexels-photo-7034646.jpeg",
-    contactInfo: "1984",
+      "https://500queerscientists.com/lynn-conway/",
+    contactInfo: "lyn.conway@fsu.edu",
   },
   {
     id: 14,
     name: "Sam Altman",
-    bio: 'George Orwell’s dystopian masterpiece, "1984," presents a chilling vision of a totalitarian society ruled by the Party and its omnipresent leader, Big Brother. The novel follows Winston Smith, a citizen of Airstrip One, as he navigates a world of surveillance, propaganda, and thought control. "1984" serves as a stark warning about the erosion of individuality, truth, and freedom in a surveillance state.',
+    bio: 'Sam Altman (born April 22, 1985) is an American entrepreneur and investor, best known as the CEO of OpenAI, the company behind ChatGPT and other AI technologies. A Stanford dropout, he co-founded the app Loopt, later became president of the Y Combinator startup accelerator, and has been a key figure in advancing artificial intelligence while also speaking publicly about its potential risks and benefits.',
     profileImage:
-      "https://images.pexels.com/photos/7034646/pexels-photo-7034646.jpeg",
-    contactInfo: "1984",
+      "https://fortune.com/img-assets/wp-content/uploads/2024/09/GettyImages-2153474303-e1727373782574.jpg?w=1440&q=90",
+    contactInfo: "sam.altman@fsu.edu",
   },
   {
     id: 15,
     name: "Steve Ballmer",
-    bio: 'George Orwell’s dystopian masterpiece, "1984," presents a chilling vision of a totalitarian society ruled by the Party and its omnipresent leader, Big Brother. The novel follows Winston Smith, a citizen of Airstrip One, as he navigates a world of surveillance, propaganda, and thought control. "1984" serves as a stark warning about the erosion of individuality, truth, and freedom in a surveillance state.',
+    bio: 'Steve Ballmer (born march in Detroit, Michigan) is an American businessman and investor best known for serving as CEO of Microsoft from 2000 to 2014. He joined Microsoft in 1980 as its first business manager, eventually succeeding Bill Gates as CEO and leading the company through a period of rapid growth—tripling sales and doubling profits—though critics saw missed opportunities in mobile and internet innovation ',
     profileImage:
-      "https://images.pexels.com/photos/7034646/pexels-photo-7034646.jpeg",
-    contactInfo: "1984",
+      "https://cdn.nba.com/teams/legacy/i.cdn.turner.com/nba/nba/.element/media/2.0/teamsites/clippers/Ballmer.Headshot300x358.png?imwidth=512",
+    contactInfo: "steve.ballmer@fsu.edu",
   },
   {
     id: 16,
     name: "Larry Ellison",
-    bio: 'George Orwell’s dystopian masterpiece, "1984," presents a chilling vision of a totalitarian society ruled by the Party and its omnipresent leader, Big Brother. The novel follows Winston Smith, a citizen of Airstrip One, as he navigates a world of surveillance, propaganda, and thought control. "1984" serves as a stark warning about the erosion of individuality, truth, and freedom in a surveillance state.',
+    bio: 'American entrepreneur and cofounder of Oracle Corporation, one of the world’s largest software and database companies, where he now serves as executive chairman and chief technology officer',
     profileImage:
-      "https://images.pexels.com/photos/7034646/pexels-photo-7034646.jpeg",
-    contactInfo: "1984",
+      "https://image.cnbcfm.com/api/v1/image/100432242-larry-ellison-ceo-oracle-getty.jpg?v=1737485726&w=1480&h=833&ffmt=webp&vtcrop=y",
+    contactInfo: "larry.ellison@fsu.edu",
   },
   {
     id: 17,
     name: "Jensen Huang",
-    bio: 'George Orwell’s dystopian masterpiece, "1984," presents a chilling vision of a totalitarian society ruled by the Party and its omnipresent leader, Big Brother. The novel follows Winston Smith, a citizen of Airstrip One, as he navigates a world of surveillance, propaganda, and thought control. "1984" serves as a stark warning about the erosion of individuality, truth, and freedom in a surveillance state.',
+    bio: 'Taiwanese-American entrepreneur and cofounder and CEO of NVIDIA, known for pioneering graphics processing units (GPUs) and driving advancements in AI and high-performance computing.',
     profileImage:
-      "https://images.pexels.com/photos/7034646/pexels-photo-7034646.jpeg",
-    contactInfo: "1984",
+      "https://api.time.com/wp-content/uploads/2020/09/jensen-huang-time-100-2021.jpg",
+    contactInfo: "jensen.huang@fsu.edu",
   },
   {
     id: 18,
     name: "Steve Wozniak",
-    bio: 'George Orwell’s dystopian masterpiece, "1984," presents a chilling vision of a totalitarian society ruled by the Party and its omnipresent leader, Big Brother. The novel follows Winston Smith, a citizen of Airstrip One, as he navigates a world of surveillance, propaganda, and thought control. "1984" serves as a stark warning about the erosion of individuality, truth, and freedom in a surveillance state.',
+    bio: 'American engineer and cofounder of Apple Inc., credited with designing the Apple I and Apple II computers, which helped launch the personal computer revolution.',
     profileImage:
-      "https://images.pexels.com/photos/7034646/pexels-photo-7034646.jpeg",
-    contactInfo: "1984",
+      "https://upload.wikimedia.org/wikipedia/commons/6/6e/Steve_Wozniak_by_Gage_Skidmore_3_%28cropped%29.jpg",
+    contactInfo: "steve.woznaik@fsu.edu",
   },
   {
     id: 19,
     name: "Andrew Ng",
-    bio: 'George Orwell’s dystopian masterpiece, "1984," presents a chilling vision of a totalitarian society ruled by the Party and its omnipresent leader, Big Brother. The novel follows Winston Smith, a citizen of Airstrip One, as he navigates a world of surveillance, propaganda, and thought control. "1984" serves as a stark warning about the erosion of individuality, truth, and freedom in a surveillance state.',
+    bio: 'Computer scientist and AI researcher, cofounder of Google Brain and Coursera, and a leading figure in machine learning and online education.',
     profileImage:
-      "https://images.pexels.com/photos/7034646/pexels-photo-7034646.jpeg",
-    contactInfo: "1984",
+      "https://upload.wikimedia.org/wikipedia/commons/2/20/Andrew_Ng_at_TechCrunch_Disrupt_SF_2017.jpg",
+    contactInfo: "andrew.ng@fsu.edu",
   },
   {
     id: 20,
     name: "Demis Hassabis",
-    bio: 'George Orwell’s dystopian masterpiece, "1984," presents a chilling vision of a totalitarian society ruled by the Party and its omnipresent leader, Big Brother. The novel follows Winston Smith, a citizen of Airstrip One, as he navigates a world of surveillance, propaganda, and thought control. "1984" serves as a stark warning about the erosion of individuality, truth, and freedom in a surveillance state.',
+    bio: 'British AI researcher, neuroscientist, and cofounder/CEO of DeepMind, a company known for breakthroughs in artificial intelligence such as AlphaGo.',
     profileImage:
-      "https://images.pexels.com/photos/7034646/pexels-photo-7034646.jpeg",
-    contactInfo: "1984",
+      "https://www.nobelprize.org/images/165765-portrait-medium.jpg",
+    contactInfo: "demis.hassabis@fsu.edu",
   },
 ];
 

@@ -26,19 +26,19 @@ const departments = [
     id: 4,
     name: "Cybersecurity",
     description:
-      "Mr. Pichai completed schooling in Jawahar Vidyalaya Senior Secondary School in Ashok Nagar, Chennai and completed the Class XII from Vana Vani school at IIT Madras. He earned a B.Tech in metallurgical engineering from IIT Kharagpur. He holds an MS from Stanford University in materials science and engineering and an MBA from the Wharton School of the University of Pennsylvania,where he was named a Siebel Scholar and a Palmer Scholar, respectively.",
+      "Cybersecurity is the practice of protecting systems, networks, and data from digital attacks, theft, or damage. It involves tools and techniques like firewalls, encryption, and monitoring to keep information safe from hackers and other threats.",
     images:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Sundar_Pichai_-_2023_%28cropped%29.jpg/250px-Sundar_Pichai_-_2023_%28cropped%29.jpg",
-    contactInfo: "sundar.pichai@fsu.edu",
+      "https://as2.ftcdn.net/v2/jpg/02/45/63/69/1000_F_245636933_kY23ohGptK5t6n8wGSXIgLgVXWeHJRct.jpg",
+    contactInfo: "cyber@university.edu",
   },
   {
     id: 5,
     name: "Data Analytics",
     description:
-      "Mr. Pichai completed schooling in Jawahar Vidyalaya Senior Secondary School in Ashok Nagar, Chennai and completed the Class XII from Vana Vani school at IIT Madras. He earned a B.Tech in metallurgical engineering from IIT Kharagpur. He holds an MS from Stanford University in materials science and engineering and an MBA from the Wharton School of the University of Pennsylvania,where he was named a Siebel Scholar and a Palmer Scholar, respectively.",
+      "Data analytics is the process of examining data to find useful patterns, trends, and insights. It helps organizations make better decisions by turning raw data into meaningful information using methods like statistics, visualization, and machine learning.",
     images:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Sundar_Pichai_-_2023_%28cropped%29.jpg/250px-Sundar_Pichai_-_2023_%28cropped%29.jpg",
-    contactInfo: "sundar.pichai@fsu.edu",
+      "hhttps://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    contactInfo: "da@university.edu",
   },
 ];
 
