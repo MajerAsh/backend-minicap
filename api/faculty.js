@@ -58,17 +58,10 @@ router.post("/", requireUser, async (req, res) => {
 
 router.put("/:id", requireUser, async (req, res) => {
   const { id } = req.params;
-  const { name, bio, profileImage, contactInfo, department_id } = req.body;
 
   try {
-    const faculty = await updateFacultyById(
-      id,
-      name,
-      bio,
-      profileImage,
-      contactInfo,
-      department_id
-    );
+    // Pass the id and the entire request body as a single object.
+    const faculty = await updateFacultyById(id, req.body);
     res.json(faculty);
   } catch (error) {
     res.status(400).json({ error: "Failed to update faculty" });

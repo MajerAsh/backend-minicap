@@ -33,12 +33,14 @@ app.use((err, req, res, next) => {
   switch (err.code) {
     // Invalid type
     case "22P02":
-      return res.status(400).send(err.message);
+      // CHANGE THIS to send JSON
+      return res.status(400).json({ message: err.message });
     // Unique constraint violation
     case "23505":
     // Foreign key violation
     case "23503":
-      return res.status(400).send(err.detail);
+      // CHANGE THIS to send JSON
+      return res.status(400).json({ message: err.detail });
     default:
       next(err);
   }
