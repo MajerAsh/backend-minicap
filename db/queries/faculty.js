@@ -81,14 +81,10 @@ export async function deleteFacultyById(id) {
   await db.query(sql, [id]);
 }
 
-export async function updateFacultyById(
-  id,
-  name,
-  bio,
-  profileImage,
-  contactInfo,
-  department_id
-) {
+
+// --- THIS IS THE CORRECTED FUNCTION ---
+export async function updateFacultyById(id, data) {
+  // Fetch the existing record from the database.
   const {
     rows: [existing],
   } = await db.query("SELECT * FROM faculty WHERE id = $1", [id]);
@@ -97,18 +93,27 @@ export async function updateFacultyById(
     throw new Error("Faculty not found");
   }
 
+  // Destructure all possible properties from the incoming request data.
+  const { name, bio, profileImage, contactInfo, departmentId } = data;
+
+  // For each property, use the new value if it was provided, otherwise fall back to the existing value.
   const updatedName = name ?? existing.name;
   const updatedBio = bio ?? existing.bio;
   const updatedProfileImage = profileImage ?? existing.profileimage;
   const updatedContactInfo = contactInfo ?? existing.contactinfo;
-  const updatedDepartmentId = department_id ?? existing.department_id;
+
+  // --- THIS IS THE CORRECTED LOGIC ---
+  // We check if the 'departmentId' key *exists* in the request data.
+  // If it does, we use its value (which can be null).
+  // If it does not exist, we use the existing value from the database.
+  const updatedDepartmentId = 'departmentId' in data ? departmentId : existing.department_id;
 
   const sql = `
     UPDATE faculty
     SET name = $1,
         bio = $2,
-        profileImage = $3,
-        contactInfo = $4,
+        profileimage = $3,
+        contactinfo = $4,
         department_id = $5
     WHERE id = $6
     RETURNING *
