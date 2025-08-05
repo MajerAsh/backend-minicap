@@ -40,15 +40,17 @@ router.get("/department/:id", async (req, res) => {
 });
 
 router.post("/", requireUser, async (req, res) => {
-  const { name, bio, profileImage, contactInfo, department_id } = req.body;
+  // Change 'department_id' to 'departmentId' to match the frontend
+  const { name, bio, profileImage, contactInfo, departmentId } = req.body;
 
   try {
+    // Pass the correct variable to the create function
     const newFaculty = await createFaculty(
       name,
       bio,
       profileImage,
       contactInfo,
-      department_id
+      departmentId
     );
     res.status(201).json(newFaculty);
   } catch (error) {
