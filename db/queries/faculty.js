@@ -28,7 +28,13 @@ export async function createFaculty(
 
 export async function getFaculty() {
   const sql = `
-  SELECT *
+  SELECT 
+    id, 
+    name, 
+    bio, 
+    profileimage AS "profileImage", 
+    contactinfo AS "contactInfo", 
+    department_id AS "departmentId"
   FROM faculty
   ORDER BY id ASC
   `;
@@ -41,7 +47,7 @@ export async function getFacultyByDepartmentId(department_id) {
   SELECT f.*, d.name AS department_name
   FROM faculty f
   LEFT JOIN departments d ON f.department_id = d.id
-  WHERE f.id = $1
+  WHERE f.department_id = $1
   `;
   const {
     rows: [faculty],
@@ -51,7 +57,13 @@ export async function getFacultyByDepartmentId(department_id) {
 
 export async function getFacultyById(id) {
   const sql = `
-  SELECT *
+  SELECT 
+    id, 
+    name, 
+    bio, 
+    profileimage AS "profileImage", 
+    contactinfo AS "contactInfo", 
+    department_id AS "departmentId"
   FROM faculty
   WHERE id = $1
   `;
