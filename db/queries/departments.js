@@ -15,8 +15,15 @@ export async function createDepartment(name, description, images, contactInfo) {
 }
 
 export async function getDepartments() {
+  // --- CORRECTED SQL QUERY ---
+  // We explicitly select columns and alias them to the expected camelCase format.
   const sql = `
-  SELECT *
+  SELECT 
+    id,
+    name,
+    description,
+    images,
+    contactInfo AS "contactInfo"
   FROM departments
   `;
   const { rows: departments } = await db.query(sql);
@@ -24,8 +31,15 @@ export async function getDepartments() {
 }
 
 export async function getDepartmentById(id) {
+  // --- CORRECTED SQL QUERY ---
+  // We do the same aliasing here for consistency.
   const sql = `
-  SELECT *
+  SELECT 
+    id,
+    name,
+    description,
+    images,
+    contactInfo AS "contactInfo"
   FROM departments
   WHERE id = $1
   `;
@@ -58,4 +72,3 @@ export async function updateDepartmentById(id, name, description, images) {
   } = await db.query(sql, [id, name, description, images]);
   return department;
 }
-
